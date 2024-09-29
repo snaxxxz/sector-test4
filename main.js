@@ -159,10 +159,10 @@ function displayDateAndMonth() {
     // меняем изображение согласно time
     const imageSlider = document.getElementById("imageSlider");
     const images = [
-      "/sector-test4/Img/01.jpg",
-      "/sector-test4/Img/02.jpg",
-      "/sector-test4/Img/03.jpg",
-      "/sector-test4/Img/04.jpg"
+      "sector-test4/Img/01.jpg",
+      "sector-test4/Img/02.jpg",
+      "sector-test4/Img/03.jpg",
+      "sector-test4/Img/04.jpg"
     ];
     
     function updateImage() {
