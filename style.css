@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+
+body{
+  background-repeat: no-repeat;
+  font-family:"Comfortaa";
+}
+.town{
+  float: inline-end;
+  padding-top: 20px;
+  padding-right: 20px; 
+}
+.but_town{
+  height: 37px;
+  color: white;
+  font-size: 5px;
+  display: flex;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.name-town{
+  display: flex;
+  flex-direction: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding-top: 4px;
+  padding-right: 25px;
+  background-repeat: no-repeat;
+}
+.degrees_workwind{
+  font-size: 37px;
+}
+.icon-weather{
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.container{
+  width: 250px;
+  height: 200px;
+  background-color: #292929;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.add-text-town{
+  padding: 5px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: white;
+}
+.geo{
+  position: absolute;
+  left: 120px;
+  top: 24px;
+  font-size: 20px;
+  color: white;
+}
+
+
+#city {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff; 
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  position: relative; 
+}
+
+input[type="checkbox"]:checked {
+  background-color: #ffffff; 
+}
+
+input[type="checkbox"]::after { 
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-left: 3px solid rgb(145, 145, 145);
+  border-bottom: 3px solid rgb(145, 145, 145);
+  transform: rotate(-45deg) scale(0);
+  transition: transform 0.2s ease-in-out; 
+}
+
+input[type="checkbox"]:checked::after {
+  transform: rotate(-45deg) scale(1); 
+}
+
+#temperature {
+  font-size: 35px;
+  /* margin-bottom: 10px; */
+  color: white;
+  position: absolute;
+  margin-left: 75px;
+  margin-top: 10px;
+
+}
+#weatherIcon{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.errorAPI {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+/* выпад меню */
+.headertext-in-note{
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+  
+li{
+  margin-bottom: 10px;
+  border-bottom: 1px solid #77777786;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  position: relative; 
+  color: white;
+}
+.add-text-in-notes{
+  padding: 5px;
+}
+.checkbox-style{
+padding: 5px;
+background-color: transparent;
+color: rgb(255, 255, 255); border: solid 1px rgb(148, 148, 148); border-radius: 5px;
+}
+
+.btn-delete-checkbox{
+  background-color: transparent;
+  color:#949494;
+  border-style: none;
+  transition: 0.2s ease-in-out;
+}
+.btn-delete-checkbox:hover{
+  color: white;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.close {
+  color: rgb(165, 165, 165);
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: auto;
+  transition: all 0.2s ease;
+}
+.close:hover {
+  color: rgb(255, 255, 255);
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: auto;
+  transition: all 0.2s ease;
+}
+.dropdown {
+  display: block;
+  position: absolute;
+  background-color: #292929;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.233);
+  z-index: 1;
+  padding: 10px;
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0.5px;
+}
+
+  .dropdown-btn {
+  background-color: transparent;
+  color: white;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+  .dropdown-btn:hover,
+  .dropdown-btn:focus {
+  background-color: transparent;
+}
+
+.show {
+  display: block;
+  opacity: 1; 
+}
+.error{
+  font-size: 20px;
+  color: white;
+}
+.main-time{
+  color: white;
+  font-size: 120px;
+  display: flex;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%,-50%);
+}
+.main-date{
+  font-size: 40px;
+  color: white;
+  display: flex;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%,-50%);
+}
+#imageSlider {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+}
+.img-slider{
+  
+  
+  width: 500px;
+  height: 500px;
+}

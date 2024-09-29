@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet"> -->
+    <title>Document</title>
+</head>
+<body>
+  
+    <div class="main">  
+        <div class="header">        
+            <button class="dropdown-btn"><img src="/Img/edit.png" style="width: 30px; height: 30px;" alt=""></button>
+            <div class="dropdown">
+                <p class="headertext-in-note">cписок задач</p>
+                <div id="errorMessage" class="error"></div> <p id="errorMessage" class="error"></p>  <!-- Элемент для сообщения об ошибке -->
+                <input class="checkbox-style" type="text" id="newTask" placeholder="Введите новую задачу">
+                <button class="btn-delete-checkbox" id="deleteSelected">Удалить выбранные</button>
+                <ul id="taskList"></ul>
+            </div>
+            <img style="width: 35px; height: 35px;" src="/Img/geo-targeting1.png" alt="">
+            <div class="geo" id="location">
+
+            </div>
+            <div class="town">              
+                <div class="container">
+                    <h2 style="margin-top: 5px;">Погода</h2>
+                    <input class="add-text-town" type="text" style="border-radius: 5px ;" id="cityInput" placeholder="Введите город">
+                    <div style="margin: 0px;" id="city"></div>
+                    <div style="margin-top: 12px;" id="temperature"></div>
+                    <img id="weatherIcon" src="" alt="">
+                    <div id="errorMessageAPI" class="errorAPI"></div>
+                  </div>
+            </div>
+        </div>
+        <div class="main-wind">   
+            <div class="main-time" id="currentTime"></div>
+            <div class="main-date" id="dateAndMonth"></div>          
+        </div>      
+    </div>
+</body>
+<script src="/main.js"></script>
+</html>
